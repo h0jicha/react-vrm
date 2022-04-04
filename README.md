@@ -1,1 +1,1 @@
-![Vercel](https://vercelbadge.vercel.app/api/tnbnt/react-vrm)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=react-vrm)
