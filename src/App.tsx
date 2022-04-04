@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Canvas } from 'react-three-fiber'
+import styled from 'styled-components'
+import { Vector3 } from 'three';
+import SampleModel from './components/SampleModel' 
+import Controls from './utils/Controls';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Canvas>
+        <SampleModel />
+        <Controls  target={new Vector3(-0.08, 1.57, 0.1)}/>
+        <directionalLight position={[1, 1, 1]} />
+        {/* <gridHelper /> */}
+      </Canvas>
+    </Container>
+  )
 }
 
-export default App;
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+`
