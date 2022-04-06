@@ -4,4 +4,4 @@
 
 ## VRM
 - プロ生ちゃん：© 2021 合同会社プロ生
-- @pixiv/three-vrm：© pixiv
+- three-vrm-model：© 2019 pixiv
